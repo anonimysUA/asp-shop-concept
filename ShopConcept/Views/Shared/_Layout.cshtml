@@ -6,11 +6,15 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" type="text/css" />
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/scripts/bootstrap.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
+
             <div class="navbar-header item">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
@@ -18,17 +22,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
-
-                    <img src="~/Content/Images/Logo_min.png" />
-                    Company
-                </a>
+                <a class="navbar" href="#"><img src="~/Content/Images/Logo_min.png" /></a>
             </div>
+
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="../navbar/"><span class="glyphicon glyphicon-globe"> Language</span></a></li>
                     <li><a href="../navbar-static-top/"><span class="glyphicon glyphicon-user"> Profile</span></a></li>
-                    <li><a href="./"><span class="glyphicon glyphicon-shopping-cart"> Cart</span><span id="cart-item" style="display:none"> :0</span></a></li>
+                    <li><a href="./"><span class="glyphicon glyphicon-shopping-cart"> Cart</span><span id="cart-item" style="margin-left:3px; display:none" class="badge">9999</span></a></li>
                 </ul>
 
 
@@ -39,48 +40,45 @@
                 </div>
             </div>
 
-
-
         </div>
     </nav>
 
     <div id="body" class="container body-content">
-            @RenderBody()
+        @RenderBody()
     </div>
 
     <footer id="footer" class="container">
 
-
+        <hr />
 
         <div class="row">
-            <div class="col-md-3">
-                <ul class="nav navbar-link navbar">
+            <div class="text-center">
+                <ul class="small list-inline">
                     <li><a href="">About</a></li>
                     <li><a href="">Home</a></li>
                     <li><a href="">Contact</a></li>
                     <li><a href="">Location</a></li>
                     <li><a href="">Terms of use</a></li>
+                    <li><a href=""> </a></li>
+                    <li><a class="btn btn-social-icon btn-lg btn-bitbucket"><i class="fa fa-bitbucket"></i></a></li>
+                    <li> <a class="btn btn-social-icon btn-lg btn-dropbox"><i class="fa fa-dropbox"></i></a></li>
+                    <li> <a class="btn btn-social-icon btn-lg btn-facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li> <a class="btn btn-social-icon btn-lg btn-flickr"><i class="fa fa-flickr"></i></a></li>
+                    <li> <a class="btn btn-social-icon btn-lg btn-github"><i class="fa fa-github"></i></a></li>
+                    <li> <a class="btn btn-social-icon btn-lg btn-google-plus"><i class="fa fa-google-plus"></i></a></li>
+                    <li> <a class="btn btn-social-icon btn-lg btn-instagram"><i class="fa fa-instagram"></i></a></li>
+                    <li> <a class="btn btn-social-icon btn-lg btn-linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    <li> <a class="btn btn-social-icon btn-lg btn-pinterest"><i class="fa fa-pinterest"></i></a></li>
+                    <li> <a class="btn btn-social-icon btn-lg btn-tumblr"><i class="fa fa-tumblr"></i></a></li>
+                    <li> <a class="btn btn-social-icon btn-lg btn-twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li> <a class="btn btn-social-icon btn-lg btn-vk"><i class="fa fa-vk"></i></a></li>
                 </ul>
-            </div>
-            <div class="col-md-3">2</div>
-            <div class="col-md-3">3</div>
-            <div class="col-md-3 text-center">
 
-                <a class="btn btn-social-icon btn-facebook"><i class="fa fa-facebook">::before</i></a>
 
-                <ul class="nav navbar-brand navbar-right">
-                    <li><a class="btn btn-social-icon btn-facebook"><span class="fa fa-facebook"></span></a></li>
-                    <li><input type="button" class="btn-facebook"/></li>
-                    <li><span class="glyphicon glyphicon-globe"><a href="">Google+</a></span></li>
-                    <li><span class="glyphicon glyphicon-globe"><a href="">Instagram</a></span></li>
-                </ul>
+
             </div>
+
         </div>
-
-
-
-
-
     </footer>
 
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
